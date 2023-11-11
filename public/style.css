@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+:root{
+    --site-purple: #9b73d1;
+    --site-orange: #eb5525;
+}
+
+.main__wrapper{
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    background: #efefef;
+    padding-right: 10px;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.left__sidebar{
+    background: var(--site-purple);
+    flex: 0 0 10%;
+    min-height: 100vh;
+}
+
+.left__sidebar-container{
+    margin: 20px;
+    color: white;
+}
+
+.navigation__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.navigation__item-link{
+    padding-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation__item-link:hover{
+    color: var(--site-orange);
+    cursor: pointer;
+}
+
+.main{
+    margin: 20px;
+}
+
+.main__title{
+    margin-bottom: 20px;
+    color: #6394d8;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.trains__list{
+    list-style-image: url('train-1045.svg');
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    margin-right: 50px;
+    margin-top: 50px;
+    max-height: 1200px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.trains__list-title{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #6394d8;
+}
+
+.trains__list-item{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+    border-bottom: #9b73d1 2px solid;
+}
+
+.trains__list-item-text{
+    font-size: 20px;
+}
+
+.trains__list-item-image{
+    height: 30px;
+}
+
+.trains__list-item-text:hover{
+    color: #56b7a1;
+    cursor: pointer;
+}
+
+.ymaps-2-1-79-control-popup__content{
+    display: none !important;
+}
+
+#map{
+    max-width: 1200px;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 500px;
+}
+
+.search__form{
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px rgba(34, 60, 80, 0.1);
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+select{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.form-element{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex: 1 1 60%;
+}
+
+.search__form input[type='submit']{
+    width: 30%;
+    height: 40px;
+    display:block;
+    margin:0 auto;
+}
+
+.search-btn{
+    border: none;
+    outline: none;
+    background: var(--site-purple);
+    font-size: 20px;
+    color: white;
+}
+
+.search-btn:hover{
+    background: #550bb6;
+}
+
+.trains__list-item-info.hide{
+    display: none;
+}
+
+.search__result{
+    margin-top: 20px;
+}
+
