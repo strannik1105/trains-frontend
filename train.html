@@ -10,6 +10,7 @@
 </head>
 <body>
 <div class="main__wrapper">
+
     <div class="left__sidebar">
         <div class="left__sidebar-container">
             <h1 class="title">ПГК Digital</h1>
@@ -32,63 +33,41 @@
     </div>
 
     <div class="main">
-        <h2 class="main__title">Поезд</h2>
+        <h2 class="main__title">Главная</h2>
         <div class="main__container">
-            <div>
-                <div id="map" style="width:1200px;height:600px;"></div>
-                <div id="viewContainer"></div>
+            <div id="map"></div>
 
-                <form class="search__form" action="">
-                    <p class="form-element">
-                        <label for="select">Введите id поезда: </label>
-                        <select name="select" id="select">
-                            <!--Supplement an id here instead of using 'name'-->
-                            <option value="value1">Значение 1</option>
-                            <option value="value2" selected>Значение 2</option>
-                            <option value="value3">Значение 3</option>
-                        </select>
-                    </p>
-                    <input class="search-btn" type="submit" value="Найти">
-                </form>
+            <p class="search__form">
+                <label for="select">Введите id поезда: </label>
+                <select name="select" id="select"></select>
+                <button onclick="searchTrain()" class="search-btn">Найти</button>
+            </p>
+
+
+            <div class="search__result">
+
             </div>
+
         </div>
     </div>
 
     <div class="trains__list">
-        <h3 class="trains__list-title">Выберите станцию:</h3>
-        <p class="trains__list-item">
-            <img class="trains__list-item-image" src="public/images/subway_FILL0_wght400_GRAD0_opsz24.svg"
-                 alt="">
-            <span class="trains__list-item-text">Станция 1</span>
-        </p>
-        <p class="trains__list-item">
-            <img class="trains__list-item-image" src="public/images/subway_FILL0_wght400_GRAD0_opsz24.svg"
-                 alt="">
-            <span class="trains__list-item-text">Станция 2</span>
-        </p>
-        <p class="trains__list-item">
-            <img class="trains__list-item-image" src="public/images/subway_FILL0_wght400_GRAD0_opsz24.svg"
-                 alt="">
-            <span class="trains__list-item-text">Станция 3</span>
-        </p>
-        <p class="trains__list-item">
-            <img class="trains__list-item-image" src="public/images/subway_FILL0_wght400_GRAD0_opsz24.svg"
-                 alt="">
-            <span class="trains__list-item-text">Станция 4</span>
-        </p>
-        <p class="trains__list-item">
-            <img class="trains__list-item-image" src="public/images/subway_FILL0_wght400_GRAD0_opsz24.svg"
-                 alt="">
-            <span class="trains__list-item-text">Станция 5</span>
-        </p>
+        <h3 class="trains__list-title">Выберите поезд:</h3>
+
+
     </div>
+
+
+
 </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
 <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat&amp;apikey=9874e6c3-bb87-4f98-b82a-0547dd75fedb"
         type="text/javascript"></script>
 
-<script src="scripts/scripts.js"></script>
+<script src="./scripts/scripts.js"></script>
+<script src="scripts/utils.js"></script>
 </html>

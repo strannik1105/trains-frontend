@@ -36,22 +36,26 @@
         <h2 class="main__title">Главная</h2>
         <div class="main__container">
             <div id="map"></div>
-            <form class="search__form" action="">
-                <p class="form-element">
+
+                <p class="search__form">
                     <label for="select">Введите id поезда: </label>
-                    <select name="select" id="select">
-                        <!--Supplement an id here instead of using 'name'-->
-                        <option value="value1">Значение 1</option>
-                        <option value="value2">Значение 2</option>
-                        <option value="value3">Значение 3</option>
-                    </select>
+                    <select name="select" id="select"></select>
+                    <button onclick="searchTrain()" class="search-btn">Найти</button>
+
+
                 </p>
-                <input class="search-btn" type="submit" value="Найти">
-            </form>
+
 
             <div class="search__result">
-                result
+
             </div>
+
+            <p class="search__form">
+                <label for="select">Введите id станции: </label>
+                <select name="select2" id="select2"></select>
+                <select name="select3" id="select3"></select>
+                <button onclick="drawWay()" class="search-btn">Нарисовать маршрут</button>
+            </p>
 
         </div>
     </div>
