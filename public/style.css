@@ -14,7 +14,7 @@ html, body{
 
 .main__wrapper{
     display: grid;
-    grid-template-columns: 10% 70% 20%;
+    grid-template-columns: 2fr 7fr 3fr;
     background: #efefef;
     padding-right: 10px;
 }
@@ -22,6 +22,10 @@ html, body{
 .title{
     margin-bottom: 40px;
     font-size: 35px;
+
+    @media (max-width: 1440px) {
+        font-size: 22px;
+    };
 }
 
 .left__sidebar{
@@ -58,22 +62,21 @@ html, body{
 }
 
 .main__title{
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
     color: #6394d8;
 }
 
 .main__container{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2vh;
 }
 
 .trains__list{
     list-style-image: url('train-1045.svg');
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    margin-right: 50px;
+    margin-right: 3vh;
     margin-top: 50px;
-    max-height: 1200px;
     padding: 10px;
     overflow: scroll;
 }
@@ -82,6 +85,11 @@ html, body{
     margin-bottom: 15px;
     font-size: 25px;
     color: #6394d8;
+
+    @media (max-width: 1280px) {
+        font-size: 17px;
+    };
+
 }
 
 .trains__list-item{
@@ -95,6 +103,7 @@ html, body{
 
 .trains__list-item-text{
     font-size: 20px;
+
 }
 
 .trains__list-item-image{
@@ -111,10 +120,10 @@ html, body{
 }
 
 #map{
-    max-width: 1200px;
+    max-width: 70vw;
     width: 100% !important;
     height: 100% !important;
-    min-height: 500px;
+    min-height: 70vh;
 }
 
 .search__form{
