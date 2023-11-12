@@ -14,7 +14,7 @@ html, body{
 
 .main__wrapper{
     display: grid;
-    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-columns: 10% 70% 20%;
     background: #efefef;
     padding-right: 10px;
 }
@@ -22,10 +22,6 @@ html, body{
 .title{
     margin-bottom: 40px;
     font-size: 35px;
-
-@media (max-width: 1440px) {
-    font-size: 22px;
-};
 }
 
 .left__sidebar{
@@ -62,36 +58,30 @@ html, body{
 }
 
 .main__title{
-    margin-bottom: 1vh;
-    font-size: 30px;
+    margin-bottom: 20px;
     color: #6394d8;
 }
 
 .main__container{
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 40px;
 }
 
 .trains__list{
     list-style-image: url('train-1045.svg');
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-    margin-right: 3vh;
+    margin-right: 50px;
     margin-top: 50px;
+    max-height: 1200px;
     padding: 10px;
     overflow: scroll;
-    max-height: 1000px;
 }
 
 .trains__list-title{
     margin-bottom: 15px;
     font-size: 25px;
     color: #6394d8;
-
-@media (max-width: 1280px) {
-    font-size: 17px;
-};
-
 }
 
 .trains__list-item{
@@ -105,7 +95,6 @@ html, body{
 
 .trains__list-item-text{
     font-size: 20px;
-
 }
 
 .trains__list-item-image{
@@ -122,10 +111,10 @@ html, body{
 }
 
 #map{
-    max-width: 70vw;
+    max-width: 1200px;
     width: 100% !important;
     height: 100% !important;
-    min-height: 70vh;
+    min-height: 500px;
 }
 
 .search__form{
@@ -162,7 +151,6 @@ select{
     background: var(--site-purple);
     font-size: 20px;
     color: white;
-    width: 30%;
 }
 
 .search-btn:hover{
@@ -175,10 +163,5 @@ select{
 
 .search__result{
     margin-top: 20px;
-}
-
-.result__info{
-    margin-bottom: 10px;
-    font-size: 20px;
 }
 
